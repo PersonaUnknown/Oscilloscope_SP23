@@ -1,0 +1,63 @@
+(SRCTools Version 3.1.1)
+ HexLoc     DecLoc    MachWord   Label        Instruction                Comment
+                                              .org 4096                  
+00001000  0000004096  2f40101c                la r29, TOP                
+00001004  0000004100  2e001080                la r24, POLL3              
+00001008  0000004104  2dc0106c                la r23, POLL2              
+0000100c  0000004108  2d801050                la r22, POLL1              
+00001010  0000004112  2d401038                la r21, POLL0              
+00001014  0000004116  2d001068                la r20, FOR1               
+00001018  0000004120  2cc01034                la r19, FOR0               
+                                                                         
+                                                                         ; DO FOREVER
+0000101c  0000004124  0e81ffe8  TOP:          ld r26, -24(r0)            ; Read RX_DATA_FLAG
+00001020  0000004128  403ba002                brzr r29, r26              ; Poll For RX_DATA_FLAG = 1
+                                                                         
+                                                                         ; Set Gain (SPI)
+00001024  0000004132  0e81ffec                ld r26, -20(r0)            ; Read UART Byte
+00001028  0000004136  1e81ffc4                st r26, -60(r0)            ; Write UART Byte to SPI     
+                                                                         
+                                                                         ; Write XADC Channels 4 and 12 to Buffer
+0000102c  0000004140  2bc010a0                la r15, BUFF               
+00001030  0000004144  2c800200                la r18, 512                
+00001034  0000004148  6ca5ffff  FOR0:         addi r18, r18, -1          
+00001038  0000004152  0f01fc50  POLL0:        ld r28, -944(r0)           ; Read XADC_BUSY
+0000103c  0000004156  402bc005                brmi r21, r28              ; Poll for 0
+00001040  0000004160  0ec1fc70                ld r27, -912(r0)           
+00001044  0000004164  e6f60010                shl r27, r27, 16           
+00001048  0000004168  b739b000                or r28, r28, r27           
+0000104c  0000004172  1f1e0000                st r28, 0(r15)             
+00001050  0000004176  0f01fc50  POLL1:        ld r28, -944(r0)           ; Read XADC_BUSY
+00001054  0000004180  402dc004                brpl r22, r28              ; Poll for 1
+00001058  0000004184  6bde0004                addi r15, r15, 4           
+0000105c  0000004188  40272003                brnz r19, r18              
+                                                                         
+                                                                         ; Write Buffer To UART Output    
+00001060  0000004192  2bc010a0                la r15, BUFF               
+00001064  0000004196  2c800200                la r18, 512                
+00001068  0000004200  6ca5ffff  FOR1:         addi r18, r18, -1          
+0000106c  0000004204  0f01ffe0  POLL2:        ld r28, -32(r0)            ; Poll For TX_BUSY_FLAG = 0
+00001070  0000004208  402fc003                brnz r23, r28              
+00001074  0000004212  0f1e0000                ld r28, 0(r15)             
+00001078  0000004216  d7380008                shr r28, r28, 8            
+0000107c  0000004220  1f01ffe4                st r28, -28(r0)            
+00001080  0000004224  0b01ffe0  POLL3:        ld r12, -32(r0)            ; Poll For TX_BUSY_FLAG = 0
+00001084  0000004228  4030c003                brnz r24, r12              
+00001088  0000004232  d7380010                shr r28, r28, 16           
+0000108c  0000004236  1f01ffe4                st r28, -28(r0)            
+00001090  0000004240  6bde0004                addi r15, r15, 4           
+00001094  0000004244  40292003                brnz r20, r18              
+00001098  0000004248  403a0001                br r29                     
+0000109c  0000004252  f8000000                stop                       
+                                                                         
+000010a0  0000004256            BUFF:         .dw 512                    
+
+--- Symbol Table ---
+BUFF: 4256
+TOP: 4124
+POLL3: 4224
+FOR1: 4200
+POLL2: 4204
+FOR0: 4148
+POLL1: 4176
+POLL0: 4152

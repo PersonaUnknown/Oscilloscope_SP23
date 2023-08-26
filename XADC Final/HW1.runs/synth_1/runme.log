@@ -1,0 +1,379 @@
+
+*** Running vivado
+    with args -log testbench.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source testbench.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source testbench.tcl -notrace
+Command: synth_design -top testbench -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 35592
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 1001.059 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'testbench' [D:/WashU/CSE/CSE 462/XADC/XADC v4/testbench.vhd:30]
+INFO: [Synth 8-3491] module 'pins' declared at 'D:/WashU/CSE/CSE 462/XADC/XADC v4/pins.vhd:4' bound to instance 'pins1' of component 'pins' [D:/WashU/CSE/CSE 462/XADC/XADC v4/testbench.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'pins' [D:/WashU/CSE/CSE 462/XADC/XADC v4/pins.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'pins' (1#1) [D:/WashU/CSE/CSE 462/XADC/XADC v4/pins.vhd:15]
+INFO: [Synth 8-3491] module 'uart' declared at 'D:/WashU/CSE/CSE 462/XADC/XADC v4/uart.vhd:12' bound to instance 'uart1' of component 'uart' [D:/WashU/CSE/CSE 462/XADC/XADC v4/testbench.vhd:168]
+INFO: [Synth 8-638] synthesizing module 'uart' [D:/WashU/CSE/CSE 462/XADC/XADC v4/uart.vhd:24]
+INFO: [Synth 8-3491] module 'fifo_generator_0' declared at 'D:/WashU/CSE/CSE 462/XADC/XADC v4/HW1.runs/synth_1/.Xil/Vivado-2224-LAPTOP-QJDTSDBT/realtime/fifo_generator_0_stub.vhdl:5' bound to instance 'myuartfifo' of component 'fifo_generator_0' [D:/WashU/CSE/CSE 462/XADC/XADC v4/uart.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'fifo_generator_0' [D:/WashU/CSE/CSE 462/XADC/XADC v4/HW1.runs/synth_1/.Xil/Vivado-2224-LAPTOP-QJDTSDBT/realtime/fifo_generator_0_stub.vhdl:19]
+INFO: [Synth 8-256] done synthesizing module 'uart' (2#1) [D:/WashU/CSE/CSE 462/XADC/XADC v4/uart.vhd:24]
+INFO: [Synth 8-3491] module 'i2c' declared at 'D:/WashU/CSE/CSE 462/XADC/XADC v4/i2c.vhd:12' bound to instance 'i2c1' of component 'i2c' [D:/WashU/CSE/CSE 462/XADC/XADC v4/testbench.vhd:179]
+INFO: [Synth 8-638] synthesizing module 'i2c' [D:/WashU/CSE/CSE 462/XADC/XADC v4/i2c.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'i2c' (3#1) [D:/WashU/CSE/CSE 462/XADC/XADC v4/i2c.vhd:24]
+INFO: [Synth 8-3491] module 'spi' declared at 'D:/WashU/CSE/CSE 462/XADC/XADC v4/spi.vhd:6' bound to instance 'spi1' of component 'spi' [D:/WashU/CSE/CSE 462/XADC/XADC v4/testbench.vhd:190]
+INFO: [Synth 8-638] synthesizing module 'spi' [D:/WashU/CSE/CSE 462/XADC/XADC v4/spi.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'spi' (4#1) [D:/WashU/CSE/CSE 462/XADC/XADC v4/spi.vhd:20]
+INFO: [Synth 8-3491] module 'xadc' declared at 'D:/WashU/CSE/CSE 462/XADC/XADC v4/xadc.vhd:6' bound to instance 'xadc1' of component 'xadc' [D:/WashU/CSE/CSE 462/XADC/XADC v4/testbench.vhd:202]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_xadc' [D:/WashU/CSE/CSE 462/XADC/XADC v4/xadc.vhd:21]
+INFO: [Synth 8-3491] module 'xadc_wiz_0' declared at 'D:/WashU/CSE/CSE 462/XADC/XADC v4/HW1.runs/synth_1/.Xil/Vivado-2224-LAPTOP-QJDTSDBT/realtime/xadc_wiz_0_stub.vhdl:5' bound to instance 'myxadcwiz' of component 'xadc_wiz_0' [D:/WashU/CSE/CSE 462/XADC/XADC v4/xadc.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'xadc_wiz_0' [D:/WashU/CSE/CSE 462/XADC/XADC v4/HW1.runs/synth_1/.Xil/Vivado-2224-LAPTOP-QJDTSDBT/realtime/xadc_wiz_0_stub.vhdl:30]
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_xadc' (5#1) [D:/WashU/CSE/CSE 462/XADC/XADC v4/xadc.vhd:21]
+INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'D:/WashU/CSE/CSE 462/XADC/XADC v4/HW1.runs/synth_1/.Xil/Vivado-2224-LAPTOP-QJDTSDBT/realtime/clk_wiz_0_stub.vhdl:5' bound to instance 'mydcm1' of component 'clk_wiz_0' [D:/WashU/CSE/CSE 462/XADC/XADC v4/testbench.vhd:216]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [D:/WashU/CSE/CSE 462/XADC/XADC v4/HW1.runs/synth_1/.Xil/Vivado-2224-LAPTOP-QJDTSDBT/realtime/clk_wiz_0_stub.vhdl:13]
+INFO: [Synth 8-3491] module 'rsrc' declared at 'D:/WashU/CSE/CSE 462/XADC/XADC v4/rsrc.vhd:11' bound to instance 'rsrc1' of component 'rsrc' [D:/WashU/CSE/CSE 462/XADC/XADC v4/testbench.vhd:252]
+INFO: [Synth 8-638] synthesizing module 'rsrc' [D:/WashU/CSE/CSE 462/XADC/XADC v4/rsrc.vhd:21]
+INFO: [Synth 8-3491] module 'pc' declared at 'D:/WashU/CSE/CSE 462/XADC/XADC v4/pc.vhd:11' bound to instance 'rsrcpc' of component 'pc' [D:/WashU/CSE/CSE 462/XADC/XADC v4/rsrc.vhd:203]
+INFO: [Synth 8-638] synthesizing module 'pc' [D:/WashU/CSE/CSE 462/XADC/XADC v4/pc.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'pc' (6#1) [D:/WashU/CSE/CSE 462/XADC/XADC v4/pc.vhd:20]
+INFO: [Synth 8-3491] module 'a' declared at 'D:/WashU/CSE/CSE 462/XADC/XADC v4/a.vhd:10' bound to instance 'rsrcareg' of component 'a' [D:/WashU/CSE/CSE 462/XADC/XADC v4/rsrc.vhd:211]
+INFO: [Synth 8-638] synthesizing module 'a' [D:/WashU/CSE/CSE 462/XADC/XADC v4/a.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'a' (7#1) [D:/WashU/CSE/CSE 462/XADC/XADC v4/a.vhd:17]
+INFO: [Synth 8-3491] module 'c' declared at 'D:/WashU/CSE/CSE 462/XADC/XADC v4/c.vhd:10' bound to instance 'rsrccreg' of component 'c' [D:/WashU/CSE/CSE 462/XADC/XADC v4/rsrc.vhd:217]
+INFO: [Synth 8-638] synthesizing module 'c' [D:/WashU/CSE/CSE 462/XADC/XADC v4/c.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'c' (8#1) [D:/WashU/CSE/CSE 462/XADC/XADC v4/c.vhd:18]
+INFO: [Synth 8-3491] module 'alu' declared at 'D:/WashU/CSE/CSE 462/XADC/XADC v4/alu.vhd:12' bound to instance 'rsrcalu' of component 'alu' [D:/WashU/CSE/CSE 462/XADC/XADC v4/rsrc.vhd:224]
+INFO: [Synth 8-638] synthesizing module 'alu' [D:/WashU/CSE/CSE 462/XADC/XADC v4/alu.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'alu' (9#1) [D:/WashU/CSE/CSE 462/XADC/XADC v4/alu.vhd:31]
+INFO: [Synth 8-3491] module 'shiftcounter' declared at 'D:/WashU/CSE/CSE 462/XADC/XADC v4/shiftcounter.vhd:11' bound to instance 'rsrcshiftcounter' of component 'shiftcounter' [D:/WashU/CSE/CSE 462/XADC/XADC v4/rsrc.vhd:242]
+INFO: [Synth 8-638] synthesizing module 'shiftcounter' [D:/WashU/CSE/CSE 462/XADC/XADC v4/shiftcounter.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'shiftcounter' (10#1) [D:/WashU/CSE/CSE 462/XADC/XADC v4/shiftcounter.vhd:17]
+INFO: [Synth 8-3491] module 'regfile' declared at 'D:/WashU/CSE/CSE 462/XADC/XADC v4/regfile.vhd:10' bound to instance 'rsrcregfile' of component 'regfile' [D:/WashU/CSE/CSE 462/XADC/XADC v4/rsrc.vhd:247]
+INFO: [Synth 8-638] synthesizing module 'regfile' [D:/WashU/CSE/CSE 462/XADC/XADC v4/regfile.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'regfile' (11#1) [D:/WashU/CSE/CSE 462/XADC/XADC v4/regfile.vhd:24]
+INFO: [Synth 8-3491] module 'ma' declared at 'D:/WashU/CSE/CSE 462/XADC/XADC v4/ma.vhd:10' bound to instance 'rsrcmareg' of component 'ma' [D:/WashU/CSE/CSE 462/XADC/XADC v4/rsrc.vhd:260]
+INFO: [Synth 8-638] synthesizing module 'ma' [D:/WashU/CSE/CSE 462/XADC/XADC v4/ma.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'ma' (12#1) [D:/WashU/CSE/CSE 462/XADC/XADC v4/ma.vhd:17]
+INFO: [Synth 8-3491] module 'md' declared at 'D:/WashU/CSE/CSE 462/XADC/XADC v4/md.vhd:10' bound to instance 'rsrcmdreg' of component 'md' [D:/WashU/CSE/CSE 462/XADC/XADC v4/rsrc.vhd:266]
+INFO: [Synth 8-638] synthesizing module 'md' [D:/WashU/CSE/CSE 462/XADC/XADC v4/md.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'md' (13#1) [D:/WashU/CSE/CSE 462/XADC/XADC v4/md.vhd:21]
+INFO: [Synth 8-3491] module 'ir' declared at 'D:/WashU/CSE/CSE 462/XADC/XADC v4/ir.vhd:10' bound to instance 'rsrcirreg' of component 'ir' [D:/WashU/CSE/CSE 462/XADC/XADC v4/rsrc.vhd:276]
+INFO: [Synth 8-638] synthesizing module 'ir' [D:/WashU/CSE/CSE 462/XADC/XADC v4/ir.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'ir' (14#1) [D:/WashU/CSE/CSE 462/XADC/XADC v4/ir.vhd:20]
+INFO: [Synth 8-3491] module 'conbit' declared at 'D:/WashU/CSE/CSE 462/XADC/XADC v4/conbit.vhd:10' bound to instance 'rsrcconbit' of component 'conbit' [D:/WashU/CSE/CSE 462/XADC/XADC v4/rsrc.vhd:285]
+INFO: [Synth 8-638] synthesizing module 'conbit' [D:/WashU/CSE/CSE 462/XADC/XADC v4/conbit.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'conbit' (15#1) [D:/WashU/CSE/CSE 462/XADC/XADC v4/conbit.vhd:16]
+INFO: [Synth 8-3491] module 'control' declared at 'D:/WashU/CSE/CSE 462/XADC/XADC v4/control.vhd:11' bound to instance 'rsrccontrol' of component 'control' [D:/WashU/CSE/CSE 462/XADC/XADC v4/rsrc.vhd:290]
+INFO: [Synth 8-638] synthesizing module 'control' [D:/WashU/CSE/CSE 462/XADC/XADC v4/control.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'control' (16#1) [D:/WashU/CSE/CSE 462/XADC/XADC v4/control.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'rsrc' (17#1) [D:/WashU/CSE/CSE 462/XADC/XADC v4/rsrc.vhd:21]
+INFO: [Synth 8-3491] module 'eprom' declared at 'D:/WashU/CSE/CSE 462/XADC/XADC v4/eprom.vhd:10' bound to instance 'eprom1' of component 'eprom' [D:/WashU/CSE/CSE 462/XADC/XADC v4/testbench.vhd:261]
+INFO: [Synth 8-638] synthesizing module 'eprom' [D:/WashU/CSE/CSE 462/XADC/XADC v4/eprom.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'eprom' (18#1) [D:/WashU/CSE/CSE 462/XADC/XADC v4/eprom.vhd:17]
+INFO: [Synth 8-3491] module 'sram' declared at 'D:/WashU/CSE/CSE 462/XADC/XADC v4/sram.vhd:11' bound to instance 'sram1' of component 'sram' [D:/WashU/CSE/CSE 462/XADC/XADC v4/testbench.vhd:267]
+INFO: [Synth 8-638] synthesizing module 'sram' [D:/WashU/CSE/CSE 462/XADC/XADC v4/sram.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'sram' (19#1) [D:/WashU/CSE/CSE 462/XADC/XADC v4/sram.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'testbench' (20#1) [D:/WashU/CSE/CSE 462/XADC/XADC v4/testbench.vhd:30]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:19 . Memory (MB): peak = 1001.059 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:21 . Memory (MB): peak = 1001.059 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:21 . Memory (MB): peak = 1001.059 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 1001.059 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/WashU/CSE/CSE 462/XADC/XADC v4/HW1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'mydcm1'
+Finished Parsing XDC File [d:/WashU/CSE/CSE 462/XADC/XADC v4/HW1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'mydcm1'
+Parsing XDC File [d:/WashU/CSE/CSE 462/XADC/XADC v4/HW1.gen/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'uart1/myuartfifo'
+Finished Parsing XDC File [d:/WashU/CSE/CSE 462/XADC/XADC v4/HW1.gen/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'uart1/myuartfifo'
+Parsing XDC File [d:/WashU/CSE/CSE 462/XADC/XADC v4/HW1.gen/sources_1/ip/xadc_wiz_0/xadc_wiz_0/xadc_wiz_0_in_context.xdc] for cell 'xadc1/myxadcwiz'
+Finished Parsing XDC File [d:/WashU/CSE/CSE 462/XADC/XADC v4/HW1.gen/sources_1/ip/xadc_wiz_0/xadc_wiz_0/xadc_wiz_0_in_context.xdc] for cell 'xadc1/myxadcwiz'
+Parsing XDC File [D:/WashU/CSE/CSE 462/XADC/XADC v4/testbench.xdc]
+WARNING: [Constraints 18-619] A clock with name 'clk' already exists, overwriting the previous clock with the same name. [D:/WashU/CSE/CSE 462/XADC/XADC v4/testbench.xdc:4]
+Finished Parsing XDC File [D:/WashU/CSE/CSE 462/XADC/XADC v4/testbench.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/WashU/CSE/CSE 462/XADC/XADC v4/testbench.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/testbench_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/testbench_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1089.699 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.485 . Memory (MB): peak = 1089.699 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:38 . Memory (MB): peak = 1089.699 ; gain = 88.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:39 . Memory (MB): peak = 1089.699 ; gain = 88.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  {d:/WashU/CSE/CSE 462/XADC/XADC v4/HW1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc}, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  {d:/WashU/CSE/CSE 462/XADC/XADC v4/HW1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc}, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for mydcm1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uart1/myuartfifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for xadc1/myxadcwiz. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:39 . Memory (MB): peak = 1089.699 ; gain = 88.641
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'control'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                         00000001 |                              000
+                      s1 |                         00000010 |                              001
+                      s2 |                         00000100 |                              010
+                      s3 |                         00001000 |                              011
+                      s4 |                         00010000 |                              100
+                      s5 |                         00100000 |                              101
+                      s6 |                         01000000 |                              110
+                      s7 |                         10000000 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'control'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:42 . Memory (MB): peak = 1089.699 ; gain = 88.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 44    
+	                8 Bit    Registers := 4     
+	                1 Bit    Registers := 17    
++---RAMs : 
+	              32K Bit	(1024 X 32 bit)          RAMs := 1     
++---Muxes : 
+	  13 Input   32 Bit        Muxes := 3     
+	   2 Input   32 Bit        Muxes := 5     
+	  96 Input   32 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 11    
+	   8 Input    8 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 4     
+	   8 Input    3 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 110   
+	   9 Input    1 Bit        Muxes := 2     
+	  10 Input    1 Bit        Muxes := 1     
+	   8 Input    1 Bit        Muxes := 31    
+	  12 Input    1 Bit        Muxes := 1     
+	  15 Input    1 Bit        Muxes := 1     
+	  32 Input    1 Bit        Muxes := 32    
+	   4 Input    1 Bit        Muxes := 5     
+	   3 Input    1 Bit        Muxes := 5     
+	   5 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:54 . Memory (MB): peak = 1089.699 ; gain = 88.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++------------+-------------+---------------+----------------+
+|Module Name | RTL Object  | Depth x Width | Implemented As | 
++------------+-------------+---------------+----------------+
+|testbench   | eprom1/data | 512x32        | Block RAM      | 
++------------+-------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------+-------------------+-----------+----------------------+------------------+
+|Module Name | RTL Object        | Inference | Size (Depth x Width) | Primitives       | 
++------------+-------------------+-----------+----------------------+------------------+
+|testbench   | sram1/myarray_reg | Implied   | 1 K x 32             | RAM256X1S x 128	 | 
++------------+-------------------+-----------+----------------------+------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'clk'
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:01:01 . Memory (MB): peak = 1089.699 ; gain = 88.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:01:10 . Memory (MB): peak = 1151.281 ; gain = 150.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++------------+-------------------+-----------+----------------------+------------------+
+|Module Name | RTL Object        | Inference | Size (Depth x Width) | Primitives       | 
++------------+-------------------+-----------+----------------------+------------------+
+|testbench   | sram1/myarray_reg | Implied   | 1 K x 32             | RAM256X1S x 128	 | 
++------------+-------------------+-----------+----------------------+------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance i_2090 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_2090 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:01:12 . Memory (MB): peak = 1169.359 ; gain = 168.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:01:16 . Memory (MB): peak = 1169.359 ; gain = 168.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:01:16 . Memory (MB): peak = 1169.359 ; gain = 168.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:01:17 . Memory (MB): peak = 1169.359 ; gain = 168.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:01:17 . Memory (MB): peak = 1169.359 ; gain = 168.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:01:17 . Memory (MB): peak = 1169.359 ; gain = 168.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:01:17 . Memory (MB): peak = 1169.359 ; gain = 168.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------+----------+
+|      |BlackBox name    |Instances |
++------+-----------------+----------+
+|1     |clk_wiz_0        |         1|
+|2     |fifo_generator_0 |         1|
+|3     |xadc_wiz_0       |         1|
++------+-----------------+----------+
+
+Report Cell Usage: 
++------+----------------------+------+
+|      |Cell                  |Count |
++------+----------------------+------+
+|1     |clk_wiz_0_bbox        |     1|
+|2     |fifo_generator_0_bbox |     1|
+|3     |xadc_wiz_0_bbox       |     1|
+|4     |CARRY4                |    35|
+|5     |LUT1                  |    79|
+|6     |LUT2                  |   253|
+|7     |LUT3                  |   179|
+|8     |LUT4                  |   163|
+|9     |LUT5                  |   226|
+|10    |LUT6                  |  1242|
+|11    |MUXF7                 |   256|
+|12    |MUXF8                 |    52|
+|13    |RAM256X1S             |   128|
+|14    |RAMB18E1              |     1|
+|15    |FDRE                  |  1496|
+|16    |FDSE                  |    35|
+|17    |IBUF                  |     6|
+|18    |IOBUF                 |    33|
+|19    |OBUF                  |     5|
+|20    |OBUFT                 |     1|
++------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:01:17 . Memory (MB): peak = 1169.359 ; gain = 168.301
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:01:07 . Memory (MB): peak = 1169.359 ; gain = 79.660
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:01:18 . Memory (MB): peak = 1169.359 ; gain = 168.301
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.088 . Memory (MB): peak = 1173.207 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 505 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1173.207 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 161 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 33 instances
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 128 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+84 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:01:34 . Memory (MB): peak = 1173.207 ; gain = 172.148
+INFO: [Common 17-1381] The checkpoint 'D:/WashU/CSE/CSE 462/XADC/XADC v4/HW1.runs/synth_1/testbench.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file testbench_utilization_synth.rpt -pb testbench_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 10 18:09:11 2023...

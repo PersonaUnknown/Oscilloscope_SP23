@@ -1,0 +1,28 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../HW1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.vhdl" \
+"../../../../HW1.gen/sources_1/ip/xadc_wiz_0/xadc_wiz_0.vhd" \
+"../../../../HW1.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_sim_netlist.vhdl" \
+"../../../../a.vhd" \
+"../../../../alu.vhd" \
+"../../../../c.vhd" \
+"../../../../conbit.vhd" \
+"../../../../control.vhd" \
+"../../../../eprom.vhd" \
+"../../../../i2c.vhd" \
+"../../../../ir.vhd" \
+"../../../../ma.vhd" \
+"../../../../md.vhd" \
+"../../../../pc.vhd" \
+"../../../../pins.vhd" \
+"../../../../regfile.vhd" \
+"../../../../rsrc.vhd" \
+"../../../../shiftcounter.vhd" \
+"../../../../spi.vhd" \
+"../../../../sram.vhd" \
+"../../../../uart.vhd" \
+"../../../../xadc.vhd" \
+"../../../../testbench.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Apr 10 18:09:24 2023
+# Process ID: 26180
+# Current directory: D:/WashU/CSE/CSE 462/XADC/XADC v4/HW1.runs/impl_1
+# Command line: vivado.exe -log testbench.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source testbench.tcl -notrace
+# Log file: D:/WashU/CSE/CSE 462/XADC/XADC v4/HW1.runs/impl_1/testbench.vdi
+# Journal file: D:/WashU/CSE/CSE 462/XADC/XADC v4/HW1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source testbench.tcl -notrace

@@ -1,0 +1,6 @@
+sv xpm --include "../../../../HW1.gen/sources_1/ip/clk_wiz_0" \
+"D:/Xilinx_2020.2/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

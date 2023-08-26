@@ -1,0 +1,28 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+D:/WashU/CSE/CSE 462/XADC/XADC v4/HW1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.vhdl,1680685780,vhdl,,,,clk_wiz_0;clk_wiz_0_clk_wiz_0_clk_wiz,,,,,,,,
+D:/WashU/CSE/CSE 462/XADC/XADC v4/HW1.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_sim_netlist.vhdl,1680685780,vhdl,,,,fifo_generator_0;fifo_generator_0_blk_mem_gen_generic_cstr;fifo_generator_0_blk_mem_gen_prim_width;fifo_generator_0_blk_mem_gen_prim_wrapper;fifo_generator_0_blk_mem_gen_top;fifo_generator_0_blk_mem_gen_v8_4_4;fifo_generator_0_blk_mem_gen_v8_4_4_synth;fifo_generator_0_compare;fifo_generator_0_compare_0;fifo_generator_0_compare_1;fifo_generator_0_compare_2;fifo_generator_0_fifo_generator_ramfifo;fifo_generator_0_fifo_generator_top;fifo_generator_0_fifo_generator_v13_2_5;fifo_generator_0_fifo_generator_v13_2_5_synth;fifo_generator_0_memory;fifo_generator_0_rd_bin_cntr;fifo_generator_0_rd_fwft;fifo_generator_0_rd_logic;fifo_generator_0_rd_status_flags_ss;fifo_generator_0_reset_blk_ramfifo;fifo_generator_0_wr_bin_cntr;fifo_generator_0_wr_logic;fifo_generator_0_wr_status_flags_ss,,,,,,,,
+D:/WashU/CSE/CSE 462/XADC/XADC v4/HW1.gen/sources_1/ip/xadc_wiz_0/xadc_wiz_0.vhd,1680794599,vhdl,,,,xadc_wiz_0,,,,,,,,
+D:/WashU/CSE/CSE 462/XADC/XADC v4/HW1.sim/sim_1/behav/xsim/glbl.v,1680685788,verilog,,,,glbl,,,,,,,,
+D:/WashU/CSE/CSE 462/XADC/XADC v4/a.vhd,1680685779,vhdl,,,,a,,,,,,,,
+D:/WashU/CSE/CSE 462/XADC/XADC v4/alu.vhd,1680685779,vhdl,,,,alu,,,,,,,,
+D:/WashU/CSE/CSE 462/XADC/XADC v4/c.vhd,1680685779,vhdl,,,,c,,,,,,,,
+D:/WashU/CSE/CSE 462/XADC/XADC v4/conbit.vhd,1680685779,vhdl,,,,conbit,,,,,,,,
+D:/WashU/CSE/CSE 462/XADC/XADC v4/control.vhd,1680685779,vhdl,,,,control,,,,,,,,
+D:/WashU/CSE/CSE 462/XADC/XADC v4/eprom.vhd,1680685779,vhdl,,,,eprom,,,,,,,,
+D:/WashU/CSE/CSE 462/XADC/XADC v4/i2c.vhd,1680685779,vhdl,,,,i2c,,,,,,,,
+D:/WashU/CSE/CSE 462/XADC/XADC v4/ir.vhd,1680685779,vhdl,,,,ir,,,,,,,,
+D:/WashU/CSE/CSE 462/XADC/XADC v4/ma.vhd,1680685779,vhdl,,,,ma,,,,,,,,
+D:/WashU/CSE/CSE 462/XADC/XADC v4/md.vhd,1680685779,vhdl,,,,md,,,,,,,,
+D:/WashU/CSE/CSE 462/XADC/XADC v4/pc.vhd,1680685779,vhdl,,,,pc,,,,,,,,
+D:/WashU/CSE/CSE 462/XADC/XADC v4/pins.vhd,1680685779,vhdl,,,,pins,,,,,,,,
+D:/WashU/CSE/CSE 462/XADC/XADC v4/regfile.vhd,1680685779,vhdl,,,,regfile,,,,,,,,
+D:/WashU/CSE/CSE 462/XADC/XADC v4/rsrc.vhd,1680685779,vhdl,,,,rsrc,,,,,,,,
+D:/WashU/CSE/CSE 462/XADC/XADC v4/shiftcounter.vhd,1680685779,vhdl,,,,shiftcounter,,,,,,,,
+D:/WashU/CSE/CSE 462/XADC/XADC v4/spi.vhd,1680715742,vhdl,,,,spi,,,,,,,,
+D:/WashU/CSE/CSE 462/XADC/XADC v4/sram.vhd,1680685779,vhdl,,,,sram,,,,,,,,
+D:/WashU/CSE/CSE 462/XADC/XADC v4/testbench.vhd,1680800950,vhdl,,,,testbench,,,,,,,,
+D:/WashU/CSE/CSE 462/XADC/XADC v4/uart.vhd,1680685779,vhdl,,,,uart,,,,,,,,
+D:/WashU/CSE/CSE 462/XADC/XADC v4/xadc.vhd,1680802200,vhdl,,,,xadc,,,,,,,,

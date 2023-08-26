@@ -1,0 +1,70 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/WashU/CSE/CSE 462/XADC/XADC v4/HW1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'clk_wiz_0_clk_wiz_0_clk_wiz'
+INFO: [VRFC 10-3107] analyzing entity 'clk_wiz_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/WashU/CSE/CSE 462/XADC/XADC v4/HW1.gen/sources_1/ip/xadc_wiz_0/xadc_wiz_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'xadc_wiz_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/WashU/CSE/CSE 462/XADC/XADC v4/HW1.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fifo_generator_0_blk_mem_gen_prim_wrapper'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_generator_0_compare'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_generator_0_compare_0'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_generator_0_compare_1'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_generator_0_compare_2'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_generator_0_rd_bin_cntr'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_generator_0_rd_fwft'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_generator_0_reset_blk_ramfifo'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_generator_0_wr_bin_cntr'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_generator_0_blk_mem_gen_prim_width'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_generator_0_rd_status_flags_ss'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_generator_0_wr_status_flags_ss'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_generator_0_blk_mem_gen_generic_cstr'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_generator_0_rd_logic'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_generator_0_wr_logic'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_generator_0_blk_mem_gen_top'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_generator_0_blk_mem_gen_v8_4_4_synth'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_generator_0_blk_mem_gen_v8_4_4'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_generator_0_memory'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_generator_0_fifo_generator_ramfifo'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_generator_0_fifo_generator_top'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_generator_0_fifo_generator_v13_2_5_synth'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_generator_0_fifo_generator_v13_2_5'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_generator_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/WashU/CSE/CSE 462/XADC/XADC v4/a.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'a'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/WashU/CSE/CSE 462/XADC/XADC v4/alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'alu'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/WashU/CSE/CSE 462/XADC/XADC v4/c.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'c'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/WashU/CSE/CSE 462/XADC/XADC v4/conbit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'conbit'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/WashU/CSE/CSE 462/XADC/XADC v4/control.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'control'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/WashU/CSE/CSE 462/XADC/XADC v4/eprom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'eprom'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/WashU/CSE/CSE 462/XADC/XADC v4/i2c.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'i2c'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/WashU/CSE/CSE 462/XADC/XADC v4/ir.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ir'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/WashU/CSE/CSE 462/XADC/XADC v4/ma.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ma'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/WashU/CSE/CSE 462/XADC/XADC v4/md.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'md'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/WashU/CSE/CSE 462/XADC/XADC v4/pc.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'pc'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/WashU/CSE/CSE 462/XADC/XADC v4/pins.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'pins'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/WashU/CSE/CSE 462/XADC/XADC v4/regfile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'regfile'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/WashU/CSE/CSE 462/XADC/XADC v4/rsrc.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'rsrc'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/WashU/CSE/CSE 462/XADC/XADC v4/shiftcounter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'shiftcounter'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/WashU/CSE/CSE 462/XADC/XADC v4/spi.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'spi'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/WashU/CSE/CSE 462/XADC/XADC v4/sram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sram'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/WashU/CSE/CSE 462/XADC/XADC v4/uart.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'uart'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/WashU/CSE/CSE 462/XADC/XADC v4/xadc.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'xadc'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/WashU/CSE/CSE 462/XADC/XADC v4/testbench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'testbench'
